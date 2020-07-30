@@ -2,6 +2,7 @@
 
 const { chalk } = require('@vue/cli-shared-utils')
 const program = require('commander')
+const vueRun = require('../lib/vueRun')
 
 // prettier-ignore
 program
@@ -23,7 +24,7 @@ program
   .command('serve [entry]')
   .description('启动开发环境')
   .action(() => {
-    console.log(chalk.yellow('coming soon'))
+    vueRun(process.argv)
   })
 
 // prettier-ignore
@@ -31,7 +32,15 @@ program
   .command('build [entry]')
   .description('构建生产环境')
   .action(() => {
-    console.log(chalk.yellow('coming soon'))
+    vueRun(process.argv)
+  })
+
+// prettier-ignore
+program
+  .command('lint [entry]')
+  .description('lint code')
+  .action(() => {
+    vueRun(process.argv)
   })
 
 // prettier-ignore
@@ -40,8 +49,6 @@ program
   .action((cmd) => {
     program.outputHelp()
     console.log(`  ` + chalk.red(`Unknown command ${chalk.yellow(cmd)}.`))
-    console.log()
-    suggestCommands(cmd)
   })
 
 // add some useful info on help

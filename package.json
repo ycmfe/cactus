@@ -5,6 +5,9 @@
   "bin": {
     "cactus": "bin/cactus.js"
   },
+  "scripts": {
+    "cz": "git cz"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ycmfe/cactus-cli.git"
