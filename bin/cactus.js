@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
+const { chalk } = require('@vue/cli-shared-utils')
 const program = require('commander')
-const inquirer = require('inquirer')
 
 // prettier-ignore
 program
@@ -21,10 +21,18 @@ program
 // prettier-ignore
 program
   .command('serve [entry]')
+  .description('启动开发环境')
+  .action(() => {
+    console.log(chalk.yellow('coming soon'))
+  })
 
 // prettier-ignore
 program
   .command('build [entry]')
+  .description('构建生产环境')
+  .action(() => {
+    console.log(chalk.yellow('coming soon'))
+  })
 
 // prettier-ignore
 program
