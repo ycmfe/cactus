@@ -13,7 +13,7 @@
 ```sh
 npm install -g @ycmfe/cactus-cli
 # or
-yarn add global @ycmfe/cactus-cli # 推荐
+yarn global add @ycmfe/cactus-cli # 推荐
 ```
 
 ## Usage
