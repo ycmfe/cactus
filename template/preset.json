@@ -17,7 +17,8 @@
       "config": "alloy",
       "lintOn": ["save", "commit"]
     },
-    "@ycmfe/vue-cli-plugin-cactus-commitlint": {}
+    "@ycmfe/vue-cli-plugin-cactus-commitlint": {},
+    "@ycmfe/vue-cli-plugin-cactus-stylelint":{}
   },
   "cssPreprocessor": "dart-sass"
 }
