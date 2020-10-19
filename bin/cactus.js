@@ -45,6 +45,14 @@ program
 
 // prettier-ignore
 program
+  .command('webpack-cdn')
+  .description('generate webpack cdn config')
+  .action(() => {
+    require('../lib/cdn')
+  })
+
+// prettier-ignore
+program
   .arguments('<command>')
   .action((cmd) => {
     program.outputHelp()
