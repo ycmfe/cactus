@@ -19,5 +19,5 @@
     },
     "@ycmfe/vue-cli-plugin-cactus-commitlint": {}
   },
-  "cssPreprocessor": "dart-sass"
+  "cssPreprocessor": "<%= cssPreprocessor %>"
 }
