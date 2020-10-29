@@ -1,4 +1,11 @@
-{
+/*
+ * @Author: LiZheGuang
+ * @Date: 2020-09-18 12:07:21
+ * @LastEditors: LiZheGuang
+ * @LastEditTime: 2020-10-23 18:59:25
+ * @FilePath: /cactus/template/preset.js
+ */
+module.exports = `{
   "bare": true,
   "useConfigFiles": true,
   "plugins": {
@@ -19,6 +26,9 @@
     },
     "@ycmfe/vue-cli-plugin-cactus-commitlint": {},
     "@ycmfe/vue-cli-plugin-cactus-stylelint":{}
+    <% if (toViewport) { %>
+    ,"@ycmfe/vue-cli-plugin-cactus-vw":{}
+    <% } %>
   },
   "cssPreprocessor": "dart-sass"
-}
+}`
