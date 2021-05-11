@@ -11,7 +11,7 @@ class Preset {
   }
 
   addPlugin(pluginName, options = {}, condition = null) {
-    if (typeof condition === 'function' && !condition()) return
+    if (typeof condition === 'function' && !condition()) return this
     this.config.plugins[pluginName] = options
     return this
   }
