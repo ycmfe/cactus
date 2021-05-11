@@ -29,7 +29,6 @@ exports.getPreset = function getPreset(options) {
     .addPlugin('@ycmfe/vue-cli-plugin-cactus-points', {
       buryPoints: options.buryPoints
     })
-    
 
   return preset.toJsonStr()
 }
