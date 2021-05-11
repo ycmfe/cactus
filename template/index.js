@@ -26,6 +26,9 @@ exports.getPreset = function getPreset(options) {
     .addPlugin('@ycmfe/vue-cli-plugin-cactus-vw', {}, () => {
       return options.toViewport
     })
+    .addPlugin('@ycmfe/vue-cli-plugin-cactus-points', {}, () => {
+      return options.buryPoints
+    })
 
   return preset.toJsonStr()
 }
